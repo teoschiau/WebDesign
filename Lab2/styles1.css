@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fbe3b7;
+}
+
+h3 {
+    text-align: center;
+    color: #fbe3b7;
+}
+
+a {
+    color: #fbe3b7;
+}
+
+a:hover {
+    color: blue;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #0d4f0d;
+}
+
+.staircase {
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: perspective(1500px) rotateX(45deg);
+}
+.step {
+    position: absolute;/*se pozitioneaza fata de primul parinte si permite mutarea fiecarui element*/
+    width: 170px;
+    height: 50px;
+    background: linear-gradient(to bottom, #777, #444);
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.7);
+    border-top: 3px solid #999;
+    border-left: 3px solid #666;
+    border-right: 3px solid #222;
+}
+
+
+.step:nth-child(10) { bottom: 0px; left: -200px; }
+.step:nth-child(9) { bottom: 50px; left: -170px; }
+.step:nth-child(8) { bottom: 100px; left: -130px; }
+.step:nth-child(7) { bottom: 150px; left: -90px; }
+.step:nth-child(6) { bottom: 200px; left: -50px; }
+.step:nth-child(5) { bottom: 250px; left: -10px; }
+.step:nth-child(4) { bottom: 300px; left: 30px; }
+.step:nth-child(3) { bottom: 350px; left: 70px; }
+.step:nth-child(2) { bottom: 400px; left: 110px; }
+.step:nth-child(1) { bottom: 450px; left: 150px; }
